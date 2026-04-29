@@ -1,7 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import { Nav } from './components/Navbar'
-import { Frases } from './components/Frases'
+import { Header } from './components/Header'
+import { HeroFrase } from './components/HeroFrase'
+import { HeroImage } from './components/HeroImage'
+import { HeroForm } from './components/HeroForm'
+import { Nav } from './components/Nav'
+
+
 
 
 
@@ -9,18 +14,19 @@ function App(){
 
 return (
   
- <>
-  <main className="min-h-screen bg-gray-100">
+
+  <main className="min-h-screen bg-stone-200">
+    <Header/>
+    <HeroFrase/>
+    <HeroImage/>
+    <HeroForm/>
     <Nav/>
-    <Frases/>
     </main>
 
-
-
- </>
  
   )
 }
 export default App
+
 
 
